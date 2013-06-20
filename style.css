@@ -1,0 +1,20 @@
+.robot {
+  height: 400px;
+  width: 400px;
+  background: grey;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  background: lightgreen;
+  border: 1px solid orange;
+  float: left;
+  margin: 15px;
+  font: bold 100px Georgia;
+}
+
+.dont-display{
+  display:none;
+}
+
