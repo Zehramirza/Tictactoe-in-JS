@@ -2,16 +2,19 @@
   height: 400px;
   width: 400px;
   background: grey;
+  border: 2px solid black;
 }
 
 .box{
   width: 100px;
   height: 100px;
-  background: lightgreen;
-  border: 1px solid orange;
+  background: black;
+  border: 1px solid blue;
   float: left;
   margin: 15px;
   font: bold 100px Georgia;
+  color: white;
+
 }
 
 .dont-display{

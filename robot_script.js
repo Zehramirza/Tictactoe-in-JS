@@ -20,6 +20,28 @@
     }
     }
     };
+
+     var check_columns = function () {
+    for (var i = 1; i <= 3; i += 1) {
+      if (board[i] === board [i + 3] && board[i + 3] === board[i + 6]) {
+      console.log("Win!")
+    }
+    }
+    };
+     var check_diagnol = function () {
+    for (var i = 1; i <= 9; i += 4) {
+      if (board[i] === board [i + 4] && board[i + 4] === board[i + 8]) {
+      console.log("Win!")
+    }
+    }
+    };
+       var check_diagnol2 = function () {
+    for (var i = 3; i <= 7; i += 2) {
+      if (board[i] === board [i + 2] && board[i + 2] === board[i + 4]) {
+      console.log("Win!")
+    }
+    }
+    };
 $(document).ready(function() {
 // be able to set the text of a square depending on who's turn
     $(".box").on("click", function(){
@@ -34,8 +56,10 @@ $(document).ready(function() {
           $(this).text(player2);
           board[mark] = player2;
         }
-
+      check_diagnol();
+      check_diagnol2();  
       check_rows();
+      check_columns();
       console.log(board);  
       move_counter = move_counter + 1;  
       });
